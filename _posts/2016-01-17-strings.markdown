@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Strings and Useful String Methods"
+date:   2016-01-17 12:29:31 +0000
+---
+
+plus concatenation and escape characters
