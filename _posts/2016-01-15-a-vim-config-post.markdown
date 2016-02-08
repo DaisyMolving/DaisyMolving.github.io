@@ -14,13 +14,13 @@ I have used a Vim plugin manager called [Vundle][vundle-github], this is in orde
 
 Following this are my plugins. All of these pictured, and many more useful plugins, can be found on Github. [Syntastic][scrooloose_syntastic] checks for syntax errors, [Vim-Ruby][vim-ruby-github] contains configuration files for editing and compiling Ruby within Vim, [Endwise][endwise-github] automatically adds `end` to Ruby methods, conditionals and loops where it is required, [Supertab][supertab-github] allows you to use `<tab>` key to complete words as you might for finding files and directories in the terminal, [Vim-Commentary][vim-commentary-github] is a plugin that allows you to comment out sections using `gcc` and takes a count for the amount of lines, [Vim-Rspec][vim-rspec-github] runs Rspec within Vim and [Ctrl-P][ctrl-p-github] allows you to search within Vim files.
 
-The objective of using Vim is to save a considerable amount of time spent on moving around the keyboard and computer display. Therefore another very handy keyboard configuration is to change the `<caps lock>` key to `<ctrl>` in order to keep your hands comfortably in the home range. From now on all your capitalisation will be achieved with `<shift>` instead, and whenever you need to use a command you can just slide lil' left pinkie over to your newly minted `ctrl` key no sweat. On a Macintosh system this can be changed within system preferences:
+The objective of using Vim is to save a considerable amount of time spent on moving around the keyboard and computer display. Therefore another very handy keyboard configuration is to change the `<caps lock>` key to `<ctrl>` in order to keep your hands comfortably in the home range. From now on all your capitalisation will be achieved with `<shift>` instead, and whenever you need to use a command you can just slide lil' left pinkie over to your newly minted `<ctrl>` key, no worries. On a Macintosh system this can be changed within system preferences:
 
 <p align="center">
 <img src="../../../../../../../assets/change_caps_lock_to_ctrl.jpg">
 </p>
 
-Now you are all set.
+Now you are all set...
 
 <p align="center">
 <img src="https://s.yimg.com/ny/api/res/1.2/yu3L92jNn_JavuhoDZHpjA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTAwO2g9MjEy/http://l.yimg.com/cd/diminuendo/1.0/original/23a7d58f5cd5ea3ab7dfc01677aee0981df94b3f.gif">
