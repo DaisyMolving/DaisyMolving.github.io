@@ -140,3 +140,10 @@ Because Ruby operates with this logic if an `&&` equation is being evaluated and
 
 The same goes for `||` statements, where if the first part of the equation is `true`, Ruby knows that the evaluation must be `true`. The second part of the equation is not evaluated, the evaluation is 'short-circuited'.
 
+<strong> The Combined Comparison Operator </strong>
+
+The combined comparison operator, or `<=>`, compares both sides or an equation and returns a value. If the first operand is greater than the second, the equation will evaluate to 1. If the first operand is equal to the second operand, the equation will evaluate to 0. If the first operand is lesser than the second operand, the equation is evaluate to -1. For instance:
+
+`3 <=> 1` will evaluate to `1`
+`3 <=> 3` will evaluate to `0`
+`1 <=> 3` will evaluate to `-1`
