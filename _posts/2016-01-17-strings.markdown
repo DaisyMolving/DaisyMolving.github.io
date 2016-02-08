@@ -12,9 +12,7 @@ String interpolation is when a variable that stores a String is printed within a
 favourite_fruit = "banana"
 
 def tell_us_your_favourite
-
   puts "My favourite fruit is a #{favourite_fruit}"
-
 end
  
 #=> My favourite fruit is a banana
