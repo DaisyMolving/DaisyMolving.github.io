@@ -71,6 +71,7 @@ This is how it might start:
 <img src="../../../../../../../assets/beginning-tdd.jpg">
 </p>
 
+<br>
 
 <strong>Another Resource...</strong>
 
