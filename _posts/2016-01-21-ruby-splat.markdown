@@ -1,5 +1,0 @@
----
-layout: post
-title:  "Ruby Splat"
-date:   2016-01-22 12:29:31 +0000
----

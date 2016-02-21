@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Strings and Useful String Methods"
+date:   2016-01-17 12:29:31 +0000
+---
+
+<strong> String Interpolation </strong>
+
+String interpolation is when a variable that stores a String is printed within another String. The variable is placed within `#{  }` inside the quotes of the string, and the variable's value will be printed. For instance:
+
+{% highlight ruby %}
+favourite_fruit = "banana"
+
+def tell_us_your_favourite
+  puts "My favourite fruit is a #{favourite_fruit}"
+end
+ 
+#=> My favourite fruit is a banana
+
+{% endhighlight %}
+
+<strong> Escape Characters in String Interpolation </strong>
+
+Escape characters are preceded by a backslash `\` and they "escape" being outputted in the ruby console. Examples of this are tabs `\t` or line breaks `\n`. They will output the whitespace left by a tab or a new line but will not be printed as `"\t"` or `"\n"`.
+
+Line breaks are represented as `\n`. They created a vertical whitespace of a new line between the two elements that the \n is situated.
+
+<strong>String Concatenation</strong>
+
+Strings can be concatenated using plus signs. For instance:
+
+`"Hello " + "how " + "are " + "you?"` becomes `"Hello how are you?"`
+
+Ruby also uses the `<<` to concatenate. This works like so:
+
+`“Hello” << “ Ruby”` becomes `“Hello Ruby”`
+
+<strong> Converting to a String </strong>
+
+The method `.to_s` converts members of other classes to Strings. For instance `7.to_s` outputs as #=> `"7"`.
+
+All elements must be Strings to be concatenated so:
+
+`"Hey" + " m" + 8` will present an error, as a String and an Integer cannot be added, and <strong>must</strong> become `"Hey" + " m" + 8.to_s` to be concatenated as `"Hey m8"`.
+
+<strong> Mutable and Immutable </strong>
+
+Strings are mutable, which means that they can be changed, messed with and converted. After a string is initially created it can then be changed and added to. This is very useful and many methods can be used upon the String. 
+
+Immutable objects are also very useful. A Symbol is an example of an object which is immutable. They are great for storing information within hash keys when an object must remain un-modified. For instance the Purple-People-Eater hash might have an immutable Symbol key called `:eye-number` and its value will always be `1`.
+
+<p align="center">
+<img src="http://2.bp.blogspot.com/-a-cGtL7Ua9g/VCL6nBO2N9I/AAAAAAAAE5k/ikGidEgFXuE/s1600/PPE2.png">
+</p>
+
+<strong> Some Useful String Methods </strong>
+
+
+{% highlight ruby %}
+favourite_fruit = "banana"
+
+favourite_fruit.capitalize
+#=> "Banana"
+favourite_fruit.reverse
+#=> "ananaB"
+favourite_fruit.upcase
+#=> "ANANAB"
+favourite_fruit.downcase
+#=> "ananab"
+favourite_fruit.length
+#=> 6
+
+{% endhighlight %}

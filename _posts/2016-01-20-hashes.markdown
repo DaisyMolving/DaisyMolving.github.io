@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Hashes"
-date:   2016-01-20 12:29:31 +0000
----
-
-hashes, morse code translator
