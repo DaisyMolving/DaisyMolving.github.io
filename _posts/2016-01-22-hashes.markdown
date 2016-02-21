@@ -5,3 +5,15 @@ date:   2016-01-22 12:29:31 +0000
 ---
 
 hashes, morse code translator
+
+arrays as a hash, what is a hash
+
+creating a hash
+
+accessing keys, accessing values
+
+strings vs symbols as keys
+
+looping through a hash
+
+morse-code translator

@@ -4,4 +4,8 @@ title: "An Introdution to Regular Expressions"
 date: 2016-01-23 12:29:31 +0000
 ---
 
+what is a regular expression and why is it helpful?
 
+some good resources for learning about regular expressions and how they work
+
+the list

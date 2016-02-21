@@ -4,3 +4,16 @@ title: "Loopy"
 date: 2016-01-21 12:29:31 +0000
 ---
 
+basic loop do
+
+ten.times do
+
+while loop
+
+until loop
+
+for loop
+
+array.each loops
+
+loops within loops

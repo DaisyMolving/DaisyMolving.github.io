@@ -4,4 +4,21 @@ title:  "Arrays"
 date:   2016-01-20 12:29:31 +0000
 ---
 
+what is an array
+(array.new, creating empty array)
+naming conventions
+
+anything can be inside an array - numbers, strings, symbols, other arrays....
+
+multidimensional arrays
+
+the shovel method 
+
+accessing array elements, index positions
+
+common array methods
+(pop, push, join, include? collect, length/size, uniq, delete, each)
+
+
+
 
