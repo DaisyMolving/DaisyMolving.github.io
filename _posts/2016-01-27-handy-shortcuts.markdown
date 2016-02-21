@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Some Handy Ruby Shortcuts"
-date: 2016-01-28 12:30:31 +0000
+date: 2016-01-27 12:30:31 +0000
 ---
 
 this += 1 instead of this = this plus 1
