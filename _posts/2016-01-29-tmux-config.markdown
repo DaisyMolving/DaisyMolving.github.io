@@ -12,6 +12,8 @@ installing tmux
 
 using tmux
 
+tmux objects - session, window, pane
+
 commands
 
 reconfiguring tmux
