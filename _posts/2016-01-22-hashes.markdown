@@ -4,16 +4,106 @@ title:  "Hashes"
 date:   2016-01-22 12:29:31 +0000
 ---
 
-hashes, morse code translator
+One day we might want to write a programme about an object with many attributes. Each of these attributes will have a name, and each attribute will have value. For instance, Marge Simpson has an attribute called hair, and its value is blue. We could use an array of arrays to describe Marge, like so:
 
-arrays as a hash, what is a hash
+`marge_simpson = [[hair, blue], [skin, yellow], [dress, green], [accessories, red]]`
 
-creating a hash
+However, when we want to access information about Marge, things get a little complicated. Thankfully there exists in Ruby a data-type called a Hash that is very helpful for this kind of information.
 
-accessing keys, accessing values
+<strong> Creating a Hash </strong>
 
-strings vs symbols as keys
+A Hash is a Ruby data-type that is container, like an Array. Within this Hash container, each element contains a key-value pair - that is, there is a key naming the element, and a value describing the element. A Hash lives inside curly braces.
 
-looping through a hash
+To create a new Hash we can state a new instance of Hash and assigning it a name:
 
-morse-code translator
+`evil_genius = Hash.new`
+
+or we can declare an empty has using curly braces:
+
+`evil_genius = {}`
+
+or we can simply write one out with all its elements:
+
+`evil_genius = {"hair" => "wild", "eyebrows" => "bushy", "mood" => "furious", "favourite_pastime" => "destruction", "favourite_food" => "Spagetti Alla Carbonara"}`
+
+In the `evil_genius` Hash, a key-value pair is `"hair" => "wild"` where `"hair"` is the key, and `"wild"` is the value.
+
+`=>` is often referred to as the hash-rocket, and assigns the value to the key.
+
+<strong> Adding Keys and Values to a Hash </strong>
+
+To add a key-value pair to a Hash you can call the following: `this_hash[key] = value`. For instance if we had an empty Hash called `library` to which we would like to add `book` and `author` we could achieve it like this:
+
+{% highlight ruby %}
+library = {}
+
+library["The Quiet American"] = "Graham Greene"
+library["A Man Lay Dead"] = "Ngaio Marsh"
+
+print library
+
+#=> {"The Quiet American" => "Graham Greene", "A Man Lay Dead" => "Ngaio Marsh"}
+{% endhighlight %}
+
+<strong> Accessing Keys and Values in the Hash </strong>
+
+In our `library` Hash above we might want to find key and output it's value. We can do this like so:
+
+{% highlight ruby %}
+library = {"The Quiet American" => "Graham Greene", "A Man Lay Dead" => "Ngaio Marsh"}
+
+#let's see who wrote The Quiet American
+print "#{library["The Quiet American"]} wrote The Quiet American"
+
+#=> "Graham Greene wrote The Quiet American"
+{% endhighlight %}
+
+What about if we want to find out what the key is by using its value? For this we can use the `#key` method:
+
+{% highlight ruby %}
+library = {"The Quiet American" => "Graham Greene", "A Man Lay Dead" => "Ngaio Marsh"}
+
+return library.key("Ngaio Marsh")
+
+#=> "A Man Lay Dead"
+{% endhighlight %}
+
+<strong> Symbols in a Hash </strong>
+
+So far we have been using Strings as our keys, but sometimes it is useful to use Symbols. Symbols are immutable, meaning they cannot be changed. They behave differently to Strings. While there can be multiple different instances of String that have the same key name, there can only be one copy of any given Symbol at a given time. For instance if we were to update the value of a String key, it would store the key-value pair as a wholly new entity. But, if we updated the value of a Symbol key, where the key can't change/is immutable, it would stored as the same entity when updated and have the same object id. For this reason Symbols save time and memory when running programs.
+
+A Symbol as a Hash key can be written in two ways. There is the familiar-looking, rocket-using `{:A Man Lay Dead => "Ngaio Marsh"}`, and also an updated (after Ruby 1.9) short-cut way that looks like this:
+
+`{A_Man_Lay_Dead: "Ngaio Marsh"}`
+
+That's better!
+
+<strong> Iterating Over a Hash </strong>
+
+Iterating over a Hash is similar to Iterating over an Array, except two parameters are passed to it - the key and the value. We can also use the `#each` method for this like we have done previously with Arrays:
+
+{% highlight ruby %}
+
+kennels = {border_collies: 4, old_english_sheepdogs: 2, huntaways: 1, labradors: 7}
+
+kennels.each do |breed, amount|
+	kennels[breed] = amount + 3
+end
+
+return kennels
+
+#=> {border_collies: 7, old_english_sheepdogs: 5, huntaways: 4, labradors: 10}
+{% endhighlight %}
+
+What if we now want to see which breeds in the kennel have more than 5 dogs? A useful method for this is `#select`
+
+{% highlight ruby %}
+kennels = {border_collies: 7, old_english_sheepdogs: 5, huntaways: 4, labradors: 10}
+
+kennels.select do |breed, count|
+	count > 5
+end
+
+#=> {border_collies: 7, labradors: 10}
+{% endhighlight %}
+
