@@ -4,21 +4,214 @@ title:  "Arrays"
 date:   2016-01-20 12:29:31 +0000
 ---
 
-what is an array
-(array.new, creating empty array)
-naming conventions
+An array is a data-type in Ruby that can be looked at as a type of container. The container holds elements. These elements can be numbers, booleans, symbols, strings, even [hashes][hashes-post] or other arrays! Arrays are recognised by elements seperated by commas within square brackets. For instance:
 
-anything can be inside an array - numbers, strings, symbols, other arrays....
+`wacky_array = [6, "hello", false, [1, 2], :colour]`
 
-multidimensional arrays
+Because arrays are containers with several elements (or if not, they are containers that have the ability to store several elements) the naming convention for an array is to make it either plural or a collective noun, and also to be as specific as possibly for clarity. For instance:
 
-the shovel method 
+`cat = ["Fluffy", "Mog", "Ginger"]`
 
-accessing array elements, index positions
+doesn't make much sense, compared to
 
-common array methods
-(pop, push, join, include? collect, length/size, uniq, delete, each)
+`cat_names = ["Fluffy", "Mog", "Ginger"]`
 
 
+<strong> Creating an Array </strong>
+
+Creating an array could be achieved by simply writing its name assigned to its elements in square brackets as above, or a new empty array could be created like so:
+
+`cat_names = Array.new`
+
+or 
+
+`cat_names = []`
+
+Then elements can be added to this array afterwards. This might be useful when we are taking information from an existing array, changing each element and then want to return it. We could put each edited element into this new array, rather than permanently changing the original. `Array.new` means that we are creating a new instance of the array class. When we are declaring a class in Ruby we must capitalise it, so Ruby understands that is what it is.
+
+<strong> Adding Elements to an Array </strong>
+
+Elements can be added to an array most simply using the shovel operator, denoted as `<<`. The shovel operator takes an element and shovels it into the array at its current last position. It is used like so:
+
+{% highlight ruby %}
+cat_names = ["Fluffy", "Mog", "Ginger"]
+new_cat_name = "Mittens"
+
+cat_names << new_cat_name
+
+return cat_names
+
+#=> ["Fluffy", "Mog", "Ginger", "Mittens"]
+{% endhighlight %}
+
+Multiple objects can be shoveled into an array at one time, like so:
+
+{% highlight ruby %}
+odd_collection = []
+
+odd_collection << "hello" << 27 << :eyes << "carrots" << true
+
+return odd_collection
+
+#=> ["hello", 27, :eyes, "carrots", true]
+{% endhighlight %}
+
+<strong> Accessing Elements Within an Array </strong>
+
+Each element in an array has an index position, a numbered position indicating where in the array it sits. The first position is `[0]` and continues consecutively. For instance in `array_example = [1, 3, 6, 2, 5, 4]`, the element at index position `[1]` is the number `3`. The last position in an array is denoted as `[-1]`. In order to access these array elements based on their index position we can return them as `array_name[index_position]`, like so:
+
+{% highlight ruby %}
+favourite_animals = ["walrus", "cow", "heron", "toad", "panther"]
+
+return favourite_animals[3]
+
+#=> "toad"
+{% endhighlight %}
+
+or
+
+{% highlight ruby %}
+tools = ["hammer", "wrench"]
+
+tools << "screwdriver" << "electric-sander" << "saw"
+
+return tools[-1]
+
+#=> "saw"
+{% endhighlight %}
+
+So this shows you how to find the element at a given index position, but what if you want to find the index position of a certain element? This can be achieved with the `#index` method. It works like so:
+
+{% highlight ruby %}
+favourite_animals = ["walrus", "cow", "heron", "toad", "panther"]
+
+return favourite_animals.index("heron")
+
+#=> 2
+{% endhighlight %}
+
+If I were to call `favourite_animals.index("earthworm")`, then `nil` would be returned, as that element does not exist in the given array.
+
+<strong> Multidimensional Arrays </strong>
+
+As said before, an array can contain other arrays inside it. For instance:
+
+`array_of_arrays = [[1, 2], [2, 3], [3, 4]]`
+
+When accessing this information by index position, `array_of_arrays[1]` returns `[2, 3]`, but if we want to access the `3` within that, we could access it like so:
+
+{% highlight ruby %}
+
+array_of_arrays = [[1, 2], [2, 3], [3, 4]]
+
+return array_of_arrays[1][1]
+
+#=> 3
+{% endhighlight %}
+
+<strong> Some Common Array Methods </strong>
+
+The `#index` method shown above is an example of a Ruby method that acts on an array. Here are some others that are very useful:
+
+`#length` or `#size` returns the number of elements within the array.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.length
+
+#=> 12
+
+return numbers.size
+
+#=> 12
+{% endhighlight %}
+
+`#reverse` reverses the array.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.reverse
+
+#=> [8, 53, 6, 5, 4, 3, 4, 2, 2, 2, 7, 1]
+{% endhighlight %}
+
+`#sort` puts the array in ordered numbers or alphabetical order
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.sort
+
+#=> [1, 2, 2, 2, 3, 4, 4, 5, 6, 7, 8, 53]
+{% endhighlight %}
+
+`#pop` removes an element from the end of an array and returns it.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.pop
+
+#=> 8
+{% endhighlight %}
+
+`#push` adds an element to the end of an array.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.push(13)
+
+#=> [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8, 13]
+{% endhighlight %}
+
+`#uniq` removes multiple instances of the same element from an array.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.uniq
+
+#=> [1, 7, 2, 4, 3, 5, 6, 53, 8]
+{% endhighlight %}
+
+`#delete` deletes a specified element.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.delete(2)
+
+#=> [1, 7, 4, 3, 4, 5, 6, 53, 8]
+{% endhighlight %}
+
+`#join` joins all elements and returns as a string.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.join("")
+
+#=> "1722243456538"
+{% endhighlight %}
+
+`#include?` returns a boolean value as to whether the given element exists in that array.
+
+{% highlight ruby %}
+numbers = [1, 7, 2, 2, 2, 4, 3, 4, 5, 6, 53, 8]
+
+return numbers.include?(3)
+
+#=> true
+
+return numbers.include?(9)
+
+#=> false
+{% endhighlight %}
 
 
+
+
+[hashes-post]: http://daisymolving.github.io/2016/01/22/hashes.html

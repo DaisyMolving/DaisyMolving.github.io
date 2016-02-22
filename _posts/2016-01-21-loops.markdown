@@ -4,16 +4,98 @@ title: "Loopy"
 date: 2016-01-21 12:29:31 +0000
 ---
 
-basic loop do
+A loop is a structure that allows us to run a block of code multiple times. Loops are helpful when we need to look at each element in an array or hash and modify them one by one. A basic loop in Ruby looks like:
 
-ten.times do
+{% highlight ruby %}
+counter = 0
+loop do 
+	counter = counter + 1 #each time loop runs, counter increases itself by one
+	print "Hello!" #each time the loop runs it will print "Hello!"
+	break if counter == 4 #stops running loop once counter has increased to 4
+end
 
-while loop
+#=> "Hello!" "Hello!" "Hello!" "Hello!"
+{% endhighlight %}
 
-until loop
+A counter, often referred to as the index or `i`, is important in a loop to indicate a point at which we want the loop to break, so that it does not run infinitely. If you accidentally create an infinite loop and run it on your terminal you can exit by inputting `ctrl C`.
 
-for loop
+<strong> Times Loop </strong>
 
-array.each loops
+The Times Loop allows us to specify how many times we want it to run. It looks like this:
 
-loops within loops
+{% highlight ruby %}
+3.times do 
+	print "Toot!"
+end
+
+#=> "Toot!" "Toot!" "Toot!"
+{% endhighlight %}
+
+<strong> While Loop </strong>
+
+The While Loop works on the condition that while something is true, it will commit to looping. It looks like this:
+
+{% highlight ruby %}
+i = 0
+while i <= 7 do
+  print "Looped."
+  i = i + 1
+end
+
+#=> "Looped." "Looped." "Looped." "Looped." "Looped." "Looped." "Looped."
+{% endhighlight %}
+
+<strong> Until Loop </strong>
+
+The Until Loop will loop until a certain condition is true. It looks like this:
+
+{% highlight ruby %}
+i = 1
+until i == 4 do 
+	print "Gherkin"
+	i = i + 1
+end 
+
+#=> "Gherkin" "Gherkin" "Gherkin"
+{% endhighlight %}
+
+<strong> For Loop </strong>
+
+The For Loop looks at the position within a range of numbers and loops once for every position within it. It looks like this:
+
+{% highlight ruby %}
+for i in 1..5
+  print "Drip"
+  i = i + 1
+end
+
+#=> "Drip" "Drip" "Drip" "Drip" "Drip"
+{% endhighlight %}
+
+<strong> Iterating over Arrays </strong>
+
+Sometimes we will want to loop through each element in an array and modify it. We can do this with the `#each` method like so:
+
+{% highlight ruby %}
+numbers = [1, 2, 3, 4, 5]
+
+numbers.each do |x|
+	print x.even?
+end
+
+#=> false true false true false
+{% endhighlight %}
+
+`#each` takes each element of the array and runs it through the block, assigning it to `x` (written between pipes) for purposes of manipulation. `x` really stands for element, but you can write anything here to make it clear. Best would be `number`, as each `number` in the array of `numbers` will print the boolen value as to whether it is even. Here is another example:
+
+{% highlight ruby  %}
+pals = ["Daphne", "Alex", "Felix", "Dan"]
+
+pals.each do |pal|
+	print "#{pal} says hello"
+end
+
+#=> "Daphne says hello" "Alex says hello" "Felix says hello" "Dan says hello"
+{% endhighlight %}
+
+
