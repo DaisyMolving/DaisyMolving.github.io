@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An Introdution to Regular Expressions"
+title: "An Introduction to Regular Expressions"
 date: 2016-01-23 12:29:31 +0000
 ---
 
@@ -64,7 +64,7 @@ Below are the different symbols that are used in sequence within a regular expre
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">m to n repetitions</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;"></td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">*</td>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">zero or more repetitions</td>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">+</td>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">one or more repetitions</td>
@@ -88,7 +88,7 @@ Below are the different symbols that are used in sequence within a regular expre
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">capture sub-group</td>
 </tr>
 <tr>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">(.</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">(.*)</td>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">capture all</td>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">(abc | def)</td>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">matches abc or def</td>
