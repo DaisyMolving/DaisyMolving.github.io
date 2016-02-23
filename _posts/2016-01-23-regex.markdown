@@ -4,8 +4,101 @@ title: "An Introdution to Regular Expressions"
 date: 2016-01-23 12:29:31 +0000
 ---
 
-what is a regular expression and why is it helpful?
+<strong> ([A-Z])\w+ </strong>
 
-some good resources for learning about regular expressions and how they work
+A regular expression is a strange-looking sequence of symbols and characters expressing a string or pattern within a longer piece of text. Each symbol within the regular expression represents an attribute that the chosen string contains. Regular expressions look funny, they seem like they could be a code curse-word, but they are extremely useful for extracting information from text such as code, log files, spreadsheets and documents. 
 
-the list
+<strong> What are they? </strong>
+
+Below are the different symbols that are used in sequence within a regular expression to isolate strings with their attributes:
+
+
+<div align="center" style="margin-bottom: 30px;">
+<table style="border-spacing: 0px; border: #111162 solid 2px;">
+<tr>
+<td style="width: 200px; padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #EEEEFF">RegEx Symbol</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #EEEEFF">Represents</td>
+<td style="width: 200px; padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #EEEEFF">RegEx Symbol</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #EEEEFF">Represents</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">abc...</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">letters</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">123...</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">digits</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">\d</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">any digit</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">\D</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">any non-digit</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">.</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">any character</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">\.</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">period</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">[abc]</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">only a, b or c</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">[^abc]</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">not a, b or c</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">[a-z]</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">characters a-z</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">[0-9]</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">numbers 0-9</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">\w</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">any alphanumeric character</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">\W</td> 
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">any non-alphanumeric character</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">{m}</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">m repetitions</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">{m-n}</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">m to n repetitions</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;"></td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">zero or more repetitions</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">+</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">one or more repetitions</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">?</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">optional character</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">\s</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">any whitespace</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">\S</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">any non-whitespace character</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">^...$</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">starts and ends</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">(...)</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">capture group</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">(a(bc))</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">capture sub-group</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">(.</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">capture all</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">(abc | def)</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">matches abc or def</td>
+</tr>
+</table>
+</div>
+
+These symbols above are used in conjunction to make an expression that represents the qualities of the string they isolate. Start and end a regular expression with a `/` and write your symbols in between. For instance if we wanted to isolate and return urls we could write `/(http:.+)/g`. The brackets capture a grouping that contains "http:" followed by one or more repetitions of any symbol. The `g` here allows us to search globally, so all instances within the file are returned.
+
+If you want to practise writing regular expressions, there is a great tutorial that The Odin Project recommends at [RegExOne][regexone-tutorial] and I have also found a helpful regular expressions tester at [RegExr][regexr-tester] if you want to have a fiddle.
+
+[regexone-tutorial]: http://regexone.com/
+[regexr-tester]: http://regexr.com/
