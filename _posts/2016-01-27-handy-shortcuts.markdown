@@ -31,20 +31,23 @@ end
 
 <strong> Percentage Literals Shortcuts </strong>
 
-Writing an array of strings can take a long time as there are many keys to navigate. Thankfully `%w()` can be very useful for this. Ruby recognises `%w(one two three)` to be the same as `["one", "two", "three"]`. You must seperate your string elements with spaces, but there are no commas or quote marks needed. This is especially helpful when you have a very long array of string elements. But beware, if one of you strings is, for instance, `"ham sandwich"` this percentage literal will split it in two because of the space. Instead you could make it `"ham_sandwich"`.
+Writing an array of strings can take a long time as there are many keys to navigate. Thankfully `%w()` can be very useful for this. Ruby recognises `%w(one two three)` to be the same as `["one", "two", "three"]`. You must seperate your string elements with spaces, but there are no commas or quote marks needed. This is especially helpful when you have a very long array of string elements. But beware, if you would like one of the strings in your array to be `"ham sandwich"`, the `%w()` will split it into  two seperate word strings, because of the space. Instead you could make it `"ham_sandwich"`.
 
 Here are some more percentage literals:
 
 `%r()` is another way to write a regular expression.
+
 `%x()` is a shell command
-`%i()` gives an array of symbols (Ruby >= 2.0.0)
-`%s()` turns foo into a symbol (:foo)
+
+`%i()` gives an array of symbols 
+
+`%s()` turns foo into a symbol
 
 <strong> Parallel Assignment </strong>
 
 Parallel assignment is where multiple variables are assigned to multiple values in one operation. So far we have seen assignment like `number = 7` but parrallel assignment looks like `letter, number = "a", 1`. This means `letter = "a"` and `number = 1`. This can be helpful in many instances, for instance if we want to swap values in variables.
 
-A magician has three upturned cups that have wierd objects underneath, they are in the swap_cups array. We will use parallel assignment to assign each object in the array to a variable and then we can see where the objects have travelled after the magician has shuffled his cups.
+A magician has three upturned cups that have weird objects underneath. They are in the swap_cups array. We will use parallel assignment to assign each object in the array to a variable, and then see where the objects end up after the magician has shuffled his cups.
 
 {% highlight ruby %}
 swap_cups = ["caramel", 37, :gherkins]
