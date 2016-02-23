@@ -6,7 +6,7 @@ date:   2016-01-24 12:29:31 +0000
 
 <strong> Splat! -> Collecting Remaining Arguments </strong>
 
-The Ruby splat is represented by an asterisk (*) and stands in for more than one parameter taken by a method. It is useful when a method will be passed several parameters or blocks and it would not be especially fun to write them all out. It is also great if you will be continually creating more blocks for the method to process. Here is a simple example:
+The Ruby splat is represented by an asterisk (*) and marks a parameter that collects many arguments taken by a method. It is useful when a method will be passed several parameters or blocks and it would not be especially fun to write them all out. It is also great if you will be continually creating more blocks for the method to process. Here is a simple example:
 
 {% highlight ruby %}
 
