@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Intro to Tmux and Some Helpful Configuration"
+title: "Introducing Tmux"
 date: 2016-01-29 12:30:31 +0000
 ---
 
@@ -125,4 +125,3 @@ It is going to be a pain to have to write `source ~/.tmux.conf` every time that 
 <img src="../../../../../../../assets/tmux-config.jpg">
 </p>
 [homebrew-install]: http://brew.sh/
-[vim-config-post]: http://daisymolving.github.io/2016/01/15/a-vim-config-post.html
