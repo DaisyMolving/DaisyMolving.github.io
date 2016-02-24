@@ -138,7 +138,7 @@ Similarly `!`, or 'is not', can be used with booleans to create expressions such
 
 Because Ruby operates with this logic if an `&&` equation is being evaluated and the first expression within it is `false`, then Ruby knows that the answer <strong>must</strong> be false, because an `&&` equation needs both sides to be `true` for the evaluation to be `true`. This is called short-circuit evaluation. In this case the second half of the equation is not evaluated to reach a conclusion.
 
-The same goes for `||` statements, where if the first part of the equation is `true`, Ruby knows that the evaluation must be `true`. The second part of the equation is not evaluated, the evaluation is 'short-circuited'.
+The same goes for `||` statements, where if the first part of the equation is `true`, Ruby knows that the evaluation <strong>must</strong> be `true`. The second part of the equation is not evaluated, the evaluation is 'short-circuited'.
 
 <strong> The Combined Comparison Operator </strong>
 
