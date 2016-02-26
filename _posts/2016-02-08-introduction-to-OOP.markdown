@@ -89,15 +89,41 @@ In essence all birds inherit from the Bird class but each can modify the attribu
 
 <strong> Encapsulation </strong>
 
-The encapsulation hides the implementation details of a class from other objects.
-Encapsulation is the packing of data and functions into a single component.
-Encapsulation means that the internal representation of an object is hidden from the outside. Only the object can interact with its internal data. Public methods can be created to open a defined way to access the logic inside an object. Encapsulation reduce system complexity and increase robustness by decoupling its components.
+Encapsulation is hiding implementation details of a class from other objects. In essence, the Birdwatching Club Director simply wants to identify birds, based on their appearance and call. We can pack all of the information that we need to identify a bird into a single component and hide how it works. This is important so that the function works as we expect, and others using our classes cannot mess how they work. We hide the internal data by making it `private`. Now the `identify` method can access its own data but another object using the method cannot. Encapsulation decreases complexity by ensuring the internal components of an object are hidden from the outside.
 
 {% highlight ruby %}
 
 class Kakapo < Bird
 
-	
+	def identify
+		appearance
+		call
+	end
+
+	private
+
+	def appearance
+		plumage = plumage
+		beak = beak
+		legs = legs
+		puts "This bird has a #{beak} with #{legs} and #{plumage}."
+	end
+
+	def plumage
+		puts "green speckled feathers with 'whiskers' on the face"
+	end
+
+	def beak
+		puts "a large grey beak"
+	end
+
+	def legs
+		puts "short legs with large feet"
+	end
+
+	def call
+		puts "boom, skreech!"
+	end
 
 end
 {% endhighlight %}
