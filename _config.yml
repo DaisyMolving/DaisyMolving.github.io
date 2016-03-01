@@ -15,10 +15,7 @@ url: "http://daisymolving.github.io/" # the base hostname & protocol for your si
 twitter_username: DaisyMolving
 github_username:  DaisyMolving
 
-comments:
-  provider: disqus
-  disqus:
-    short_name: daisymolving
+comments: true
 
 # Build settings
 markdown: kramdown
