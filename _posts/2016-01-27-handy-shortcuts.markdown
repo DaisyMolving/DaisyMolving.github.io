@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Some Handy Ruby Shortcuts"
 date: 2016-01-27 12:30:31 +0000
 ---

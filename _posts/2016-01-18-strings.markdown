@@ -46,9 +46,9 @@ All elements must be Strings to be concatenated so:
 
 <strong> Mutable and Immutable </strong>
 
-Strings are mutable, which means that they can be changed, messed with and converted. After a string is initially created it can then be changed and added to. This is very useful and many methods can be used upon the String. 
+Strings are mutable, which means that they can be changed. But what does that mean? When an instance of a string, e.g. `"purple-people-eater"`, is created it has an object id number. If I was to create another `"purple-people-eater"` string instance it would have a different object id number, even though it looks like the same string. This means that several instances of `"purple-people-eater"` can exist at one time, and can all be modified and changed without affecting each other.
 
-Immutable objects are also very useful. A Symbol is an example of an object which is immutable. They are great for storing information within hash keys when an object must remain un-modified. For instance the Purple-People-Eater hash might have an immutable Symbol key called `:eye-number` and its value will always be `1`.
+A Symbol however, `:purple-people-eater`, can only exist as one instance at any given time. There cannot be multiple instances of the `:purple-people-eater` and the instances cannot be modified. This is helpful in hashes where Symbols hold information. Information that the Symbol holds can be changed, without a new instance of the Symbol being created to hold the new value. This means information can be processed more quickly. This will become easier to understand when you have reached this post on [hashes][hashes-post].
 
 <p align="center">
 <img src="http://2.bp.blogspot.com/-a-cGtL7Ua9g/VCL6nBO2N9I/AAAAAAAAE5k/ikGidEgFXuE/s1600/PPE2.png">
@@ -72,3 +72,5 @@ favourite_fruit.length
 #=> 6
 
 {% endhighlight %}
+
+[hashes-post]: http://daisymolving.github.io/2016/01/22/hashes.html

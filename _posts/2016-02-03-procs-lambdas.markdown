@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Procs and Lambdas"
 date: 2016-02-03 12:30:30 +0000
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Case Statements and the Ternary Operator"
 date: 2016-01-28 12:30:31 +0000
 ---

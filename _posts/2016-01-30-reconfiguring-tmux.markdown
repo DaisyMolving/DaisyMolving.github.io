@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Reconfiguring Tmux"
 date: 2016-01-30 12:30:31 +0000
 ---

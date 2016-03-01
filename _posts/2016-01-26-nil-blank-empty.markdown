@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Something in Nothing"
 date: 2016-01-26 12:30:31 +0000
 ---
