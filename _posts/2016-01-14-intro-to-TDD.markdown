@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "An introduction to TDD"
 date:   2016-01-14 12:29:31 +0000
 ---

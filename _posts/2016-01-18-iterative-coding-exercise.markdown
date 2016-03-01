@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "An Iterative Coding Exercise"
 date:   2016-01-18 18:29:31 +0000
 ---

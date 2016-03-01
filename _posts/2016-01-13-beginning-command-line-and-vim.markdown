@@ -5,7 +5,6 @@ title:  "Command Line and Vim"
 date:   2016-01-13 12:29:31 +0000
 ---
 
-
 Yesterday I spoke to Cedric about where I want to be and we came up with a plan of the things that I should learn to get there. Cedric wrote a document to overview all the steps we would take.
 
 The first thing is the review the Command Line and learn Vim.
@@ -20,8 +19,6 @@ Your terminal comes with its own Vim tutorial after it has been downloaded. Type
 <p align="center">
 <img src="../../../../../../../assets/vimtutor-screen.jpg">
 </p>
-
-
 
 I have been writing notes on paper on the new things that I am learning so far. One would argue that hand-writing is a bit counter intuitive when I should be using a keyboard. But I have always personally found note-writing to be a good exercise for letting information sink in. It seems to me that the time it takes to write the words helps me to comprehend the information, and saying it aloud is even better! Talking about code is really something that I must practise a lot, as I find that even if I understand a concept, as soon as I open my mouth I seem like the world’s-biggest-silly-person.
 
