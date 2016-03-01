@@ -1,8 +1,8 @@
 ---
 layout: post
+comments: true
 title:  "Command Line and Vim"
 date:   2016-01-13 12:29:31 +0000
-categories: unix terminal command_line vim
 ---
 
 

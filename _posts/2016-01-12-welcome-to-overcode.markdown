@@ -1,8 +1,8 @@
 ---
 layout: post
+comments: true
 title:  "Welcome to OverCode!"
 date:   2016-01-12 12:29:31 +0000
-comments: true
 ---
 
 Hello and welcome to OverCode.
