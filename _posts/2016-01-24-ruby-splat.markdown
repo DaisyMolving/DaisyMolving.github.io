@@ -26,7 +26,7 @@ predator("Lion", "Zebra", "Antelope", "Buffalo")
 #=> "Lion predates Buffalo"
 {% endhighlight %}
 
-So here you can see that `*foods` uses the splat operator and therefore stands in for `Zebra`, `Antelope` and `Buffalo`, while `animal` stands only for the first argument that the `predator` method takes, `Lion`. The splat helps us to pass the method several arguments without having to put these arguments inside an array. You can see that the splat treats the remaining arguments as though they really are arguments and for this reason splats can also be used for...
+So here you can see that `*foods` uses the splat operator and therefore stands in for `Zebra`, `Antelope` and `Buffalo`, while `animal` stands only for the first argument that the `predator` method takes, `Lion`. The splat helps us to pass the method several arguments without having to put these arguments inside an array. You can see that the splat treats the remaining arguments as though they really <strong>are</strong> arrays, and for this reason splats can also be used for...
 
 <strong> ...Creating Arrays </strong>
 
@@ -74,5 +74,5 @@ print hash_to_array
 
 <strong> Beware </strong>
 
-By far the best use of a splat is when we want to collect remaining arguments to be passed to a method. This will be very helpful in many situations. However the other uses shown here should be used with caution, because while `*` can essentially stand in to `to.a`, `.to_a` has the safety of only achieving one goal and so does not make your code any more complex or confused when adding extra functionality.
+By far the best use of a splat is when we want to collect remaining arguments to be passed to a method. This will be very helpful in many situations. However the other uses shown here should be used with caution, because while `*` can essentially stand in for `.to_a`, but simply using `.to_a` instead has the safety of only achieving one goal and so does not make your code any more complex or confused when adding extra functionality.
 
