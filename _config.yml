@@ -7,6 +7,7 @@
 
 # Site settings
 title: OverCode
+comments: true
 email: daisymolving@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is a blog about the things that I am learning. While it might not be eternally helpful, hopefully it is somewhat morale-boosting. If you spot something that isn't right, or something I can build on, please contact me! I am pleased to learn what you have to offer.

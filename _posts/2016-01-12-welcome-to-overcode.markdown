@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to OverCode!"
 date:   2016-01-12 12:29:31 +0000
-categories: hello
+comments: true
 ---
 
 Hello and welcome to OverCode.
