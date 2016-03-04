@@ -1,0 +1,40 @@
+---
+layout: post
+comments: true
+title: "Scope"
+date: 2016-02-26 12:30:30 +0000
+---
+
+<strong> What is Scope? </strong>
+
+Scope is essentially about variables and their visibility to different contexts. You can think about it as whether variables can be read and therefore used by different classes and the methods inside them. There are four different levels of visibility for variables. They are local, instance, class and global.
+
+<strong> Local Variables </strong>
+
+A local variable is what we have mostly seen so far. It is just a name that is assigned to a value, and this name represents the value in different contexts. Local variables are used within methods and are visible across blocks inside these methods. Consider this example:
+
+{% highlight ruby %}
+class Converter
+
+	def number_to_letter
+	alphabet = [a, b, c, d, e, f]
+	letters = ""
+		(0..5).each do |number|
+			letters << alphabet[number]
+		end
+	letters
+	end
+
+end
+{% endhighlight %}
+
+Here we can see how local variables are only visible to each other in the local method. See how `letters` is defined within the `number_to_letter` method, then is also available within the `each do` block to be altered and then again available to be finally returned outside of the block. This is where the scope ends. A `letters` variable existing outside of the `number_to_letter` method would not be the <i>same</i> `letters` variable that exists inside the method, and would not be affected by anything that happens within the method. 
+
+<strong> Instance Variables </strong>
+
+
+<strong> Class Variables </strong>
+
+<strong> Global Variables </strong>
+
+<strong> Why Is Scope Important? </strong>
