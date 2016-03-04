@@ -106,4 +106,4 @@ See how `attr_accessor` allows us to read and write the title of `book_1`, `attr
 
 There you have it!
 
-P.S. "The Violent Bear It Away" by Flannery O'Connor is a `book_1` I would highly recommend.
+P.S. "The Violent Bear It Away" by Flannery O'Connor is a real-life instance of `Book` I would highly recommend.
