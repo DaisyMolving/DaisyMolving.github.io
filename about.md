@@ -7,7 +7,7 @@ permalink: /about/
 Welcome to OverCode, where words about programming go when I write them down. My name is Daisy Mølving. I am interested in programming, knitting, botany, painting and perpetual motion machines. I am very good at peeling mandarins. 
 
 <p align="center">
-<img src="../../../../../../../assets/cabbage-about-page.png">
+<img src="../../../../../../../assets/about-page-image.png">
 </p>
 
 OverCode is a record of things that I learn, what I gain from it, my thoughts about programming and what I will explore next... I always look forward to learning more, so I welcome any corrections or suggestions. Leave a comment, or get in touch:
