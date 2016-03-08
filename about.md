@@ -13,7 +13,7 @@ Welcome to OverCode, where words about programming go when I write them down. My
 OverCode is a record of things that I learn, what I gain from it, my thoughts about programming and what I will explore next... I always look forward to learning more, so I welcome any corrections or suggestions. Leave a comment, or get in touch:
 
 <div align="center">
-<div style="float: left; width: 33%;"><a target="_blank" href="https://twitter.com/DaisyMolving"> <img src="https://pbs.twimg.com/profile_images/666407537084796928/YBGgi9BO.png"></a> </div>
+<div style="float: left; width: 33%;"><a target="_blank" href="https://twitter.com/DaisyMolving"> <img style="width: 200px; margin-top: 20px;" src="https://g.twimg.com/Twitter_logo_blue.png"></a> </div>
 <div style="float: left; width: 33%; overflow: hidden;"><a target="_blank" href="https://github.com/DaisyMolving"><img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"></a></div>
 <div style="float: left; width: 33%; overflow: hidden;"><a target="_blank" href="https://uk.linkedin.com/in/daisymolving"><img style="width: 190px; margin-top: 10px" src="http://marisasanfilippo.com/wp-content/uploads/2015/07/Linkedin_circle.svg_.png"></a></div>
 </div>
