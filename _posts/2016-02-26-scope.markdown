@@ -14,7 +14,7 @@ Scope is essentially about variables and their visibility to different contexts.
 A local variable is what we have mostly seen so far. It is just a name that is assigned to a value, and this name represents the value in different contexts. Local variables are used within methods and are visible across blocks inside these methods. Consider this example:
 
 {% highlight ruby %}
-class Converter
+class AlphanumericConverter
 
 	def number_to_letter
 	alphabet = [a, b, c, d, e, f]
@@ -32,9 +32,64 @@ Here we can see how local variables are only visible to each other in the local 
 
 <strong> Instance Variables </strong>
 
+Instance variables are noted by an `@` symbol. An instance variable is a variable whose value is set upon creating an instance of a class. It is visible only within a specific instance, across all class methods. An instance variable is not available directly from class definitions.
+
+{% highlight ruby %}
+class Cat
+
+	def initialize(name, color)
+		@name = name #these instance variables are assigned to arguments on initialization
+		@color = color
+	end
+
+	def get_name
+		@name #now we can return the particular instance's name in this method
+	end
+
+	def proper_name
+		@name.capitalize! #see how these instance methods are visible across all methods within the class.
+	end
+
+end
+
+cat_1 = Cat.new("fluffy", "orange")
+cat_1.get_name #=> "fluffy"
+cat_1.proper_name #=> "Fluffy"
+{% endhighlight %}
 
 <strong> Class Variables </strong>
 
+Class variables are noted with the prefix `@@`. They are available within the class that defines them, and any subclasses but not outside that. Class variables are particularly useful for setting default values that you want to be accessible to the whole class and incremented or changed within method definitions. This can be acheived like so:
+
+{% highlight ruby %}
+class Cat
+
+@@cat_amount = 0 #the default amount of cats is set to zero
+
+	def initialize(cat, color)
+		@cat = cat
+		@color = color
+		@@cat_amount += 1 #everytime a cat object is instantiated, this number increases by 1
+	end
+
+	def self.amount
+		@@cat_amount
+	end
+end
+
+cat_1 = Cat.new("fluffy", "orange")
+cat_2 = Cat.new("scarface claw", "black and white")
+Cat.amount #=> 2
+{% endhighlight %}
+
 <strong> Global Variables </strong>
 
+Global variables are prefixed with a `$` sign. As the name suggests, global variables are available anywhere in your programme, between all classes and methods within them. Be careful when using global variables, and only when absolutely necessary. It is generally a bad idea to make a variable available <i>everywhere</i> as it hinders the programme's control of flow and encapsulation. It is like having a gossipy friend and hoping they wont tell anyone your secrets. Don't let a global variable on the loose. Global state makes your programme very unpredictable.
+
 <strong> Why Is Scope Important? </strong>
+
+Scope is important so we can control what information is available where, between our different objects. It is important to allow someone using your programme access to certain parts, but not to others. Reduced access keeps your programme acting as predicted, which decreases likelihood that it may break and also makes debugging easier if it does. Scope can be thought of as a computer security principle - [The Principle of Least Privilege][least-privilege-wikipedia]. You can track how things change if you know the channels of access. We implement scope to limit this potential for change in the first place!
+
+<p align="center"> <iframe src="//giphy.com/embed/mHhHc7Q4wYWoE" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
+
+[least-privilege-wikipedia]: https://en.wikipedia.org/wiki/Principle_of_least_privilege
