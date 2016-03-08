@@ -1,15 +1,20 @@
 ---
 layout: page
-title: About
+title: About OverCode
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Welcome to OverCode, where words about programming go when I write them down. My name is Daisy Mølving. I am interested in programming, knitting, botany, painting and perpetual motion machines. I am very good at peeling mandarins. 
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+<p align="center">
+<img src="../../../../../../../assets/cabbage-about-page.png">
+</p>
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+OverCode is a record of things that I learn, what I gain from it, my thoughts about programming and what I will explore next... I always look forward to learning more, so I welcome any corrections or suggestions. Leave a comment, or get in touch:
+
+<div align="center">
+<div style="float: left; width: 33%;"><a target="_blank" href="https://twitter.com/DaisyMolving"> <img src="https://pbs.twimg.com/profile_images/666407537084796928/YBGgi9BO.png"></a> </div>
+<div style="float: left; width: 33%; overflow: hidden;"><a target="_blank" href="https://github.com/DaisyMolving"><img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"></a></div>
+<div style="float: left; width: 33%; overflow: hidden;"><a target="_blank" href="https://uk.linkedin.com/in/daisymolving"><img style="width: 190px; margin-top: 10px" src="http://marisasanfilippo.com/wp-content/uploads/2015/07/Linkedin_circle.svg_.png"></a></div>
+</div>
+
