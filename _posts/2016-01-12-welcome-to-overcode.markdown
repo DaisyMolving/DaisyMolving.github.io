@@ -16,7 +16,7 @@ But how exactly? Well apart from serving my ramblings, OverCode will hopefully a
 
 It can also be incredibly helpful to have the mentorship or advice of someone who works in programming or has the expertise that you seek.
 
-I met Cedric, very-kind-Ruby-developer, at [Codebar][codebar] several months ago. I was very happy to discover that he runs a free mentoring programme in his free time and would be happy to help me to become a better programmer. 
+I met Cedric, very-kind-software-developer, at [Codebar][codebar] several months ago. I was very happy to discover that he runs a mentoring programme in his free time and would be happy to help me to become a better programmer. 
 
 
 How good is that!

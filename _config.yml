@@ -9,7 +9,7 @@
 title: OverCode
 email: daisymolving@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is a blog about the things that I am learning. While it might not be eternally helpful, hopefully it is somewhat morale-boosting. If you spot something that isn't right, or something I can build on, please contact me! I am pleased to learn what you have to offer.
+  OverCode is a simple blog about the programming languages that I am learning, and any ideas that I assemble from studying them. I hope it can serve as some use to someone who is also learning, or at least be somewhat morale-boosting. I am always keen to learn more, so if you spot something that isn't right, or something I can build on, please leave a comment or contact me. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://daisymolving.github.io/" # the base hostname & protocol for your site
 twitter_username: DaisyMolving
