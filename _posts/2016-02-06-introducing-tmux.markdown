@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Introducing Tmux"
-date: 2016-01-29 12:30:31 +0000
+date: 2016-02-06 12:30:31 +0000
 ---
 
 <strong> What is Tmux? </strong>

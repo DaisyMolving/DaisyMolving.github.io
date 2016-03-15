@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Object Oriented Programming"
-date: 2016-02-08 12:30:31 +0000
+date: 2016-02-17 12:30:31 +0000
 ---
 
 Everything in Ruby is an object, and that means that everything in Ruby shares certain behaviours. These behaviours are the four aspects of Object Oriented Programming. They are called Abstraction, Inheritance, Polymorphism and Encapsulation.

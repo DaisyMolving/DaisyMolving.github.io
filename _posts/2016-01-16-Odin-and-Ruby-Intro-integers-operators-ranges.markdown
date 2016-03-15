@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Odin and Ruby"
-date:   2016-01-15 12:29:31 +0000
+date:   2016-01-16 12:29:31 +0000
 ---
 
 As part of the plan for learning with Cedric I am working through The Odin Project, specifically the section on [Ruby Programming][odin-ruby-programming-overview]. The Odin Project aims to give people to tools to become web developers and enter the tech industry, and its free. 

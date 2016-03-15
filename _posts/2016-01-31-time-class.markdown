@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "The Time Class"
-date:   2016-01-25 12:29:31 +0000
+date:   2016-01-31 12:29:31 +0000
 ---
 <strong> Using Ruby's Time Class </strong>
 

@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Case Statements and the Ternary Operator"
-date: 2016-01-28 12:30:31 +0000
+date: 2016-02-05 12:30:31 +0000
 ---
 
 In looking at some basic [conditionals][conditionals-post] we discovered some super cool syntax that Ruby uses to shorten large blocks of conditional code. Ruby has more tricks up its sleeve, and those tricks come in the form of the case statement and the ternary operator.

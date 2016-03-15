@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Is And Isn't It True Or False"
-date:   2016-01-16 12:29:31 +0000
+date:   2016-01-19 12:29:31 +0000
 ---
 
 <strong> Arithmetic and Comparison Operators </strong>

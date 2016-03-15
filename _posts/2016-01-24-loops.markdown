@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Loopy"
-date: 2016-01-21 12:29:31 +0000
+date: 2016-01-24 12:29:31 +0000
 ---
 
 A loop is a structure that allows us to run a block of code multiple times. Loops are helpful when we need to look at each element in an array or hash and modify them one by one. A basic loop in Ruby looks like:

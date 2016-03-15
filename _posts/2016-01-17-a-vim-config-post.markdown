@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Some Vim Configuration"
-date:   2016-01-15 12:29:31 +0000
+date:   2016-01-17 12:29:31 +0000
 ---
 
 Vim is here to help speed up your process of editing files and running processes, and with a little configuration one can make it look and act exactly as desired. After installing Vim we can configure a vimrc file. When first accessed, it may be empty. Type `vim ~/.vimrc` into your terminal to open it. So far mine looks like this:

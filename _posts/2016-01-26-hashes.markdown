@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Hashes"
-date:   2016-01-22 12:29:31 +0000
+date:   2016-01-26 12:29:31 +0000
 ---
 
 One day we might want to write a programme about an object with many attributes. Each of these attributes will have a name, and each attribute will have value. For instance, Marge Simpson has an attribute called hair, and its value is blue. We could use an array of arrays to describe Marge, like so:

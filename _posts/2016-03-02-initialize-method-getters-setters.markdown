@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Getting, Setting and Accessing Class Attributes"
-date: 2016-02-25 12:30:30 +0000
+date: 2016-03-02 12:30:30 +0000
 ---
 
 <strong> Initialize and Instance Variables </strong>

@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Ruby Conditionals"
-date:   2016-01-18 18:29:31 +0000
+date:   2016-01-21 18:29:31 +0000
 ---
 
 <strong>Ruby is Cool</strong><img src="https://rfclipart.com/image/small/42-ba-c9/isolated-cartoon-orange-sun-in-sunglasses-Download-Royalty-free-Vector-File-EPS-46737.jpg">

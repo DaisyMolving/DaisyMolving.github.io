@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "An Iterative Coding Exercise"
-date:   2016-01-18 18:29:31 +0000
+date:   2016-01-21 18:29:31 +0000
 ---
 
 Today I went to do a paired iterative coding exercise using TDD as part of a job application. It was in Java, a language that I haven't looked at before, but the idea was that I would speak generally about how the tests would be written and the problem solved, as a Senior Developer wrote the code for me. Seems simple right? But I couldn't get my head around it, especially in the nerves of the moment. It was not a complete disaster, but it really proved to me how much more familiar with Test Driven Development I must become. 

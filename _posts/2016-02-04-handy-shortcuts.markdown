@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Some Handy Ruby Shortcuts"
-date: 2016-01-27 12:30:31 +0000
+date: 2016-02-04 12:30:31 +0000
 ---
 
 <strong> A Better Way </strong>

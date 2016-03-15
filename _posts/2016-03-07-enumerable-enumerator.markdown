@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Enumerable Module"
-date: 2016-03-01 12:30:30 +0000
+date: 2016-03-07 12:30:30 +0000
 ---
 
 A module that we have used many times before is the `Enumerable` module. It is a collection of iterative methods, and is included in the `Hash` and `Array` classes. Enumerable methods give us a more concise way of iterating over elements in a collection than a `for` loop, and also provide us with many useful operations. 

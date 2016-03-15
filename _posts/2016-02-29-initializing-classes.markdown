@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Classes"
-date: 2016-02-24 12:30:30 +0000
+date: 2016-02-29 12:30:30 +0000
 ---
 
 In Object Oriented Programming we work with objects. They are the models that represent absolutely everything in our programming universe. They give us information, perform tasks and calculations, and return answers in the form of new objects. A Class is one of these objects, a collection of methods that will be used by an instance of itself. A Class can inherit from a parent Class, and have a child Class that inherits from it. We use Classes when we are modelling objects. An example could be if we wanted to model a book in our local library.  We can do this like so:

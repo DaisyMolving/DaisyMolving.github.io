@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Procs and Lambdas"
-date: 2016-02-03 12:30:30 +0000
+date: 2016-02-10 12:30:30 +0000
 ---
 
 <strong> Procs </strong>
