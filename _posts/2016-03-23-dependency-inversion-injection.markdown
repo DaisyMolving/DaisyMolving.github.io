@@ -5,7 +5,7 @@ title: "SOLID: Dependency Inversion Principle"
 date: 2016-03-23 12:30:30 +0000
 ---
 
-The last letter in the SOLID acronym stands for The Dependency Inversion Principle, aka The Dependency Injection Principle. It states, "Depend upon Abstractions, not upon Concretions". That is, do not allow high-level, broad objects to depend upon low-level specific objects, instead create layers of abstraction in mid-level objects to "invert" the dependency.
+The last letter in the SOLID acronym stands for The Dependency Inversion Principle, or The Dependency Injection Principle. It states, "Depend upon Abstractions, not upon Concretions". That is, do not allow high-level, broad objects to depend upon low-level, specific objects, instead create layers of abstraction in mid-level objects to "invert" the dependency.
 
 The more abstracted objects are, the less likelihood of breakage if one of those objects is altered, and it also means that more functionality can be added with ease. Let's look at an example. Let's say we have created an online Media Store, which <i>reads audio files</i> from its library and <i>writes</i> them as downloads when people buy them. Considering the basic requirements at face value, it might look something like diagram below:
 
