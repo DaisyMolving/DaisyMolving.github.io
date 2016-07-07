@@ -25,11 +25,13 @@ The Elixir console can be accessed with the command `iex`. In this environment o
 
 Handy!
 
+<strong>Learning with Koans</strong>
 
+8th Light have written some [Elixir koans][elixir-koans-github] to help learn syntax, modules and data-types. In order to try them, `git clone` the url, `cd` into the freshly cloned directory, split your panes and run one with the instructions on the github readme, the other completing and saving each exercise within the `koans` directory in order. Each time you save the file the tests will run, and tell you whether you have aced it or not.
 
 [8th-light-website]:https://8thlight.com/
 [elixir-intro]:http://elixir-lang.org/
 [elixir-installation]:http://elixir-lang.org/install.html
 [vim-config-post]:http://daisymolving.github.io/2016/01/17/a-vim-config-post.html
 [vim-elixir-github]:https://github.com/elixir-lang/vim-elixir
-
+[elixir-koans-github]:https://github.com/elixirkoans/elixir-koans
