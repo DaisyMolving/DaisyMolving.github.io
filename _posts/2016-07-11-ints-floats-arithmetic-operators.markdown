@@ -73,7 +73,7 @@ The return would look like `{45, "Z"}`, a tuple. Here are some more examples of 
 
 {% highlight elixir %}
 Integer.parse("1")
-#=> 1
+#=> {1, ""}
 
 Integer.parse("76W")
 #=> {76, "W"}
