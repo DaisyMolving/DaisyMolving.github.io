@@ -15,28 +15,28 @@ These operators are very useful when we want a programme to perform certain acti
 <div align="center" style="margin-bottom: 30px;">
 <table style="border-spacing: 0px; border: #111162 solid 2px;">
 <tr>
-<td style="width: 200px; padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #EEEEFF">Arithmetic Operator</td>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #EEEEFF">Means:</td>
+<td style="width: 200px; padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #eeeeff">arithmetic operator</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px; color: #111162; background-color: #eeeeff">means:</td>
 </tr>
 <tr>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">+</td>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">Adds</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">adds</td>
 </tr>
 <tr>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">-</td>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">Subtracts</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">subtracts</td>
 </tr>
 <tr>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">*</td>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">Multiplies</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">multiplies</td>
 </tr>
 <tr>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">/</td>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">Divides</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">divides</td>
 </tr>
 <tr>
 <td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">%</td>
-<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">Modulus, this returns a value that is the remainder when one number is divided by another</td>
+<td style="padding: 10px; border: #111162 solid 1px; margin: 0px;">modulus, this returns a value that is the remainder when one number is divided by another</td>
 </tr>
 </table>
 </div>
