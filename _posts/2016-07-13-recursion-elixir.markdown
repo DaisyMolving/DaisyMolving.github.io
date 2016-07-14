@@ -44,7 +44,6 @@ Recursion.repeat_greeting("Hey there!", 3)
 #=> "Hey there!"
 {% endhighlight %}
 
-_jekk
 
 <strong>What is it Doing?</strong>
 
@@ -52,7 +51,7 @@ When `3` is passed in as the `num_of_repeats`, the first `repeat_greeting` funct
 
 <strong>Recursion in the Roman Numerals Kata</strong>
 
-Below is an example of how recursion could be used in the Roman Numerals Kata, for the arabic numbers 1, 2, 3 only. The `convert(arabic` function is being called in the tests with an arabic number as the argument. This function checks the second `convert` function to meet the condition, and if it does not, the third `convert` function is called. This third function calls `convert` recursively, subtracts `1` from the `arabic` number and stores the `roman` argument as a list to which a single `"i"` is added at the last position. It checks the conditional `convert` function and continues to recur until the conditional statement is `true`. When this happens it joins the list that is matched to `roman` and returns a string - the roman numeral!
+Below is an example of how recursion could be used in the Roman Numerals Kata, for the arabic numbers 1, 2, 3 only. The `convert(arabic)` function is being called in the tests with an arabic number as the argument. This function checks the second `convert` function to meet the condition, and if it does not, the third `convert` function is called. This third function calls `convert` recursively, subtracts `1` from the `arabic` number and stores the `roman` argument as a list to which a single `"i"` is added at the last position. It checks the conditional `convert` function and continues to recur until the conditional statement is `true`. When this happens it joins the list that is matched to `roman` and returns a string - the roman numeral!
 
 <p align="center">
 <img src="../../../../../../../assets/recursion_elixir_roman_nums.png">
