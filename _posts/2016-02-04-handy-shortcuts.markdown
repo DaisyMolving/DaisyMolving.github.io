@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Some Handy Ruby Shortcuts"
+title: "Ruby: Some Handy Shortcuts"
 date: 2016-02-04 12:30:31 +0000
 ---
 

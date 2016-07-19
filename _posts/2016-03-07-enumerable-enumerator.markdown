@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Enumerable Module"
+title: "Ruby: Enumerable Module"
 date: 2016-03-07 12:30:30 +0000
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Odin and Ruby"
+title:  "Ruby: Odin and Ruby"
 date:   2016-01-16 12:29:31 +0000
 ---
 

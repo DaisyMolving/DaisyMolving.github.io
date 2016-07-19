@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Procs and Lambdas"
+title: "Ruby: Procs and Lambdas"
 date: 2016-02-10 12:30:30 +0000
 ---
 

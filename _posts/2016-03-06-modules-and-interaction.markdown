@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Modules, and How They Interact"
+title: "Ruby: Modules, and How They Interact"
 date: 2016-03-06 12:30:30 +0000
 ---
 

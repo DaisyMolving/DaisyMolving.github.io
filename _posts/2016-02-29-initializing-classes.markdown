@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Classes"
+title: "Ruby: Classes"
 date: 2016-02-29 12:30:30 +0000
 ---
 

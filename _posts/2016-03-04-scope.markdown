@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Scope"
+title: "Ruby: Scope"
 date: 2016-03-04 12:30:30 +0000
 ---
 

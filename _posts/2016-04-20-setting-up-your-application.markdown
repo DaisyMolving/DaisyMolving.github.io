@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Layout of Your Application"
+title: "Ruby: Layout of Your Application"
 date: 2016-04-20 12:30:30 +0000
 ---
 

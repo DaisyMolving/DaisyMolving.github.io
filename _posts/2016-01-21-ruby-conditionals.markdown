@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Ruby Conditionals"
+title:  "Ruby: Conditionals"
 date:   2016-01-21 18:29:31 +0000
 ---
 

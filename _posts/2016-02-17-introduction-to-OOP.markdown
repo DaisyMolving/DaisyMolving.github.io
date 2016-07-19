@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Object Oriented Programming"
+title: "Object Oriented Programming in Ruby"
 date: 2016-02-17 12:30:31 +0000
 ---
 

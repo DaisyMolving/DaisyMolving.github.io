@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Getting, Setting and Accessing Class Attributes"
+title: "Ruby: Getting, Setting and Accessing Class Attributes"
 date: 2016-03-02 12:30:30 +0000
 ---
 

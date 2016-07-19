@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "More Encapsulation"
+title: "Ruby: More Encapsulation"
 date: 2016-03-10 12:30:30 +0000
 ---
 

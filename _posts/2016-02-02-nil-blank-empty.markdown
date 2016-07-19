@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Something in Nothing"
+title: "Ruby: Something in Nothing"
 date: 2016-02-02 12:30:31 +0000
 ---
 

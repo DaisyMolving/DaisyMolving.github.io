@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Case Statements and the Ternary Operator"
+title: "Ruby: Case Statements and the Ternary Operator"
 date: 2016-02-05 12:30:31 +0000
 ---
 
