@@ -169,4 +169,4 @@ iex> Enum.map([1, 2, 3, 4], fn(x) -> x * 2 end)
 #=> [2, 4, 6, 8]
 {% endhighlight %}
 
-[linked-lists-tuples-explained]:
+[linked-lists-tuples-explained]:http://daisymolving.github.io/2016/08/01/linked-list-vs-tuples-and-arrays.html
