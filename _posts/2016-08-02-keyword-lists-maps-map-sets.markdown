@@ -1,8 +1,7 @@
 ---
 layout: post
 comments: true
-published: false
-title: "Elixir: Keyword Lists, Maps and Map Sets"
+title: "Elixir: Keyword Lists and Maps"
 date: 2016-08-02 10:30:30 +0000
 ---
 
@@ -46,8 +45,44 @@ iex> pets_of_sally[:dogs]
 
 Also, remembering [how linked lists work][linked-lists-post], and knowing that keyword lists have the same structure, we know that keyword lists will have an order that is set by the developer, and finding values by their key occurs in a linear fashion. It is therefore not an instant recall. 
 
+<strong>Using Keyword Lists as Functions</strong>
+
+Keyword lists are very convenient for use as function options. A function whose option is the key of the keyword list can store a boolean value that will cause the function to be called or not. For instance:
+
+{% highlight elixir %}
+double_up = fn(str, opts) -> 
+  if opts[:duplicate] do
+    String.duplicate(str, 2)
+  else
+    str
+  end
+end
+
+iex> double_up.("double", duplicate: true)
+#=> "doubledouble"
+
+iex> double_up.("trouble", duplicate: false)
+#=> "trouble"
+{% endhighlight %}
+
 <strong>Maps</strong>
 
-<strong>Map Sets</strong>
+A map is another associative data structure, and they use curly braces preceded by a percentage sign, like so:
 
-[linked-lists-post]:
+{% highlight elixir %}
+iex> my_map = %{:key_one => "value_one", :key_two => "value_two"}
+#=> 2
+{% endhighlight %}
+
+Maps represent structured data. It is useful for representing a collection of attributes relating to an object, like a person. For example:
+
+{% highlight elixir %}
+iex> @person == %{first_name: "Wednesday",
+    second_name: "Addams",
+    age: 6, 
+    pets: "Homer the Spider"}
+#=> %{first_name: "Wednesday", second_name: "Addams", age: 6, pets: "Homer the Spider"}
+{% endhighlight %}
+
+
+[linked-lists-post]:http://daisymolving.github.io/2016/08/01/linked-list-vs-tuples-and-arrays.html
