@@ -1,11 +1,11 @@
 ---
 layout: post
 comments: true
-title: "Elixir: Pattern Matching and Operators"
+title: "Elixir: Pattern Matching"
 date: 2016-08-05 10:30:30 +0000
 ---
 
-In Elixir the `=` symbol is not for assignment but used as a symbol for pattern-matching. This means that when a variable name is matched to some data it can be rematched, just like in other languages variables are reassigned, but there are some differences. For example:
+In Elixir the `=` symbol is not for assignment but used as an operator for pattern-matching. This means that when a variable name is matched to some data it can be rematched, just like in other languages variables are reassigned, but there are some differences. For example:
 
 {% highlight elixir %}
 
