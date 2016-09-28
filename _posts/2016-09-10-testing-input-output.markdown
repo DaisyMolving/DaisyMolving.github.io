@@ -3,7 +3,7 @@ layout: post
 published: false
 comments: true
 title: "Elixir: Testing Input and Output"
-date: 2016-09-06 10:30:30 +0000
+date: 2016-09-10 10:30:30 +0000
 ---
 
 Inputs and outputs are collected and printed by an application at runtime. This could mean running your programme to pass an input or check the printout every time you run a test. Fortunately Elixir provides a module to test input/output which doesn't require running the application. Inputs can be provided and outputs checked with a module called CaptureIO.
