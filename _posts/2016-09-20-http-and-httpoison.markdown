@@ -42,7 +42,7 @@ HTTP requests most commonly use four different verbs in order to determine the t
 
 <strong>An HTTP response</strong>
 
-An HTTP request always receives a response, even if the request is unsuccessful. If the request is successful, the response is a status code and the information/files requested; if the request fails, the response is a status code only.
+An HTTP request always receives a response, even if the request is unsuccessful. If the request is successful, the response is a status code and the information/files requested; if the request fails, the response is a status code usually with some kind of error message.
 
 Status codes tell us details on the status of the request. They present themselves as a three digit number. Some different status codes are:
 
