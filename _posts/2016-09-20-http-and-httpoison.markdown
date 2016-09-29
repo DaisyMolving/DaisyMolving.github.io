@@ -62,6 +62,8 @@ The image below shows what the HTTP request/response needs and delivers. We must
 
 [HTTPoison][httpoison-github] provides us with an HTTP client for our Elixir application. It provides us with everything we need for interacting with external services. 
 
+The documentation, which includes functions for the different types of http request verbs can be found on [hexdocs][httpoison-hexdocs].
+
 In order to use HTTPoison, simply open your `mix.exs` file and add it as a dependency here:
 <p align="center">
 <img src="../../../../../../../assets/adding_httpoison_to_dependencies.png">
@@ -83,7 +85,6 @@ HTTPoison must be required in the module that is using it, like so:
 
 Because HTTPoison runs like a process in the background of your application, it must be called to start. Here we are using it to send a `GET` request in order to retreive information from the Open Weather Data API. The get request is called upon the url in the `create_url` function that can be seen as an image at the top of this page. As previously explained, the HTTP response will consist of a status code and a message body. We are interested in parsing information from the message body and so we use the suffix function `.body`.
 
-
 <p align="center">
 <img src="../../../../../../../assets/http_request_function.png">
 </p>
@@ -100,3 +101,4 @@ How we decipher this and convert it into something which Elixir understands will
 
 [environment-variables-post]:http://daisymolving.github.io/2016/09/15/storing-secrets-as-environment-variables.html
 [httpoison-github]:https://github.com/edgurgel/httpoison
+[httpoison-hexdocs]:https://hexdocs.pm/httpoison/HTTPoison.html
