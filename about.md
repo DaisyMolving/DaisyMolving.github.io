@@ -6,7 +6,7 @@ permalink: /about/
 
 Welcome to OverCode, where words about programming go when I write them down.
 
-My name is Daisy Mølving. I am interested in programming, knitting, botany, painting and reading mystery novels. I am currently applying myself to a student apprenticeship at <a href="https://8thlight.com/">8th Light</a> in London. 
+My name is Daisy Mølving. I am interested in programming, knitting, botany, painting and reading mystery novels. I am currently applying myself to a resident apprenticeship at <a href="https://8thlight.com/">8th Light</a> in London. 
 
 
 <div style="margin-bottom: 30px;" align="center">
