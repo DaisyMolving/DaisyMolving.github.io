@@ -39,13 +39,13 @@ Naming functions accurately should help us to find single purposes so that <i>ac
 
 <strong>Minimise Duplication</strong>
 
-Duplication in our code is often unneccessary and can add confusion. Several functions that all contain the same elements often points to another violation of the Single Responsibility Principle, because the duplication is often a responsibility used by each function that is not central to its intended purpose. Extracting duplications into their own functions can reduce the clutter and coupling in our code. 
+Duplication in our code is often unneccessary and can add confusion. Several functions that all contain the same element often points to another violation of the Single Responsibility Principle, because the duplication is a responsibility used by each function that is not central to its intended purpose. Extracting duplications into their own functions can reduce the clutter and coupling in our code. 
 
 The DRY (Don't Repeat Yourself) principle introduced by Andy Hunt and Dave Thomas states, "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system". This means that no piece of knowledge need be represented twice. 
 
 However, sometimes two seemingly identical lines of code can in fact represent different things, and refactoring them to remove such duplication actually couples two things that are not directly related. Corey Haines calls this "Naïve Duplication". He explains how this can be avoided with expressive naming and increasing abstraction to show intent. 
 
-The example that Haines gives is a from a Ruby implementation of Conway's Game of Life. In it, a cell can survive until the next generation if there are enough other living cells nearby, or if the cell is dead it can be revived if there are enough living cells nearby. The rules for this game can be read by clicking on the link at the top of this page. Below is a method that checks if a cell is alive or dead in the next generation:
+The example that Haines gives is a from a Ruby implementation of Conway's Game of Life. In it, a cell can survive until the next generation if there are enough other living cells nearby. Alternatively, if the cell is dead it can be revived if there are enough living cells nearby. The rules for this game can be read by clicking on the link at the top of this page. Below is a method that checks if a cell is alive or dead in the next generation:
 
 {% highlight ruby %}
 class Cell
@@ -89,11 +89,15 @@ end
 
 <strong>The Four Rules Order Debate</strong>
 
-There are two camps generally when it comes to the priority of the the four rules. Some follow them as they are written here, others feel that minimising duplication is more important than expressing intent. I think the most insightful readings of the priority here have been from those who suggest that the two middle rules act in a feedback loop, one always introducing the other. It is easy to see how closely related they are in the game of life cell example above, when expressive naming prevents unneccessary, and potentially harmful, removal of duplication. On the other side of the coin removal of duplication creates more specific functions, which in turn clearly expresses intent.
+There are two camps generally when it comes to the priority of the the four rules. Some follow them as they are written here, others feel that minimising duplication is more important than expressing intent. 
+
+I think the most insightful readings of the priority here have been from those who suggest that the two middle rules act in a feedback loop, one always introducing the other. It is easy to see how closely related they are in the game of life cell example above, when expressive naming prevents unneccessary, and potentially harmful, removal of duplication. On the other side of the coin removal of duplication creates more specific functions, which in turn clearly expresses intent.
 
 <strong>Make Things Small</strong>
 
-The final rule is to make things small. This means the keep functions to a single purpose and to keep classes and modules with only one reason to change. Keeping things small also means ensuring that unneccessary functionality is not created, as the simpler an application the more extensible it is. The YAGNI, or You Aren't Going To Need It, principle states that a programmer should not add functionality until deemed necessary. By removing anything that does not serve the application we are also advocating the Open/Closed Principle, that is that your code should be open to extension and closed to modification. 
+The final rule is to make things small. This means to keep functions to a single purpose and to create classes and modules that have only one reason to change. Keeping things small also means ensuring that unneccessary functionality is not created, as the simpler an application the more extensible it is. 
+
+The YAGNI, or You Aren't Going To Need It, principle states that a programmer should not add functionality until deemed necessary. By removing anything that does not serve the application we are also advocating the Open/Closed Principle, that is that your code should be open to extension and closed to modification. 
 
 The smaller the function the better it serves its purpose, and the smaller the class or module the more obvious its containment of such functions.
 
