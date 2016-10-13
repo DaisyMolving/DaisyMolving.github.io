@@ -99,7 +99,7 @@ defmodule ProjectName do
 
   def verify_name(name_input, accepted_name, failure) do
     if String.match?(name_input, accepted_name) do
-      IO.puts("Thanks #{user_input}!")
+      IO.puts("Thanks #{name_input}!")
     else
       verify_name(IO.gets(failure), accepted_name, failure)
     end
@@ -115,10 +115,16 @@ defmodule ProjectNameTest do
   use ExUnit.Case
   import ExUnit.CaptureIO
 
-  test "prints failure message until name is verified" do
+  test "prints failure message if name is invalid" do
     assert capture_io("!@£123\nDaisy", fn ->
       ProjectName.verify_name
-		end) == "What is your name? Please input a name that has only letters: Thanks Daisy!\n"
+		end) =~ "Please input a name that has only letters:"
+  end
+
+  test "prints success message if name is valid" do
+    assert capture_io("Daisy", fn ->
+      ProjectName.verify_name
+		end) =~ "Thanks Daisy!"
   end
 end
 
