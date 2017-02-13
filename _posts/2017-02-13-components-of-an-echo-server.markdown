@@ -27,7 +27,7 @@ The server is the part of the program that sends a response to the client reques
 
 <strong>What is TCP?</strong>
 
-TCP stands for Transmission Control Protocol. It is a way of sending information over a network. Transmission Control Protocol was designed to be error-checked and reliable. It breaks up the information into streams and checks that the streams are delivered in the correct order. TCP uses a sequence number to identify each byte of data to ensure this. Because it does all of this error checking this does mean that TCP can be a little slower in some cases. For instance if you were speaking to someone on a video call online, or live streaming, checking that all bytes of data were present and correct would take to long to allow a good quality of call. It would lag a lot. For this type of information to be send back and forth a different type of protocol, called User Datagram Protocol (UDP) is often used. 
+TCP stands for Transmission Control Protocol. It is a way of sending information over a network. Transmission Control Protocol was designed to be error-checked and reliable. It breaks up the stream of information into bytes and checks that the bytes are delivered in the correct order. TCP uses a sequence number to identify each byte of data to ensure this. Because it does all of this error checking this does mean that TCP can be a little slower in some cases. For instance if you were speaking to someone on a video call online checking that all bytes of data were present and correct would take to long to allow a good quality of call. It would lag a lot. For this type of information to be send back and forth a different type of protocol, called User Datagram Protocol (UDP) is often used. 
 
 <strong>What is a port?</strong>
 
