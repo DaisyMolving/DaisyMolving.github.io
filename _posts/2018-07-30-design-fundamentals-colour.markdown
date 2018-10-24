@@ -5,18 +5,18 @@ title:  "Fundamentals of Design: Colour"
 date:   2018-07-30 00:00:00 +0000
 ---
 
-Colour is an important part of our daily life, and also an important design element. Just as it informs us about our environment, it can also be used by designers to inform users of how to interact with their design. In the world of UX, colour is used to draw attention, show relationships, lead the eye, convey product branding, direct the user journey and deliver deeper symbolic meaning. The relationship between user and product is very important when choosing colour, as personal perception, culture and even physiology can change the way that colour is interpreted.
+Colour is an important part of daily life, and also an important design element. Just as it informs us about our environment, it can also be used by designers to inform users of how to interact with their design. In the world of UX, colour is used to draw attention, show relationships, lead the eye, convey product branding, direct the user journey and deliver deeper symbolic meaning. The relationship between user and product is very important when choosing colour, as personal perception, culture and even physiology can change the way that colour is interpreted.
 
 <br>
 **How do we see colour?**
 
-Humans see colour using cones in the retina of their eyes. Wavelengths of light hit surfaces around us, which in turn enter our eyes via the cornea, and then our pupils. From here the light passes to the back of our eye, where the retina is found. The retina contains a round-about total of 126 million light receptors, called rods and cones. Rods (120 million) perceive values of light and dark, and cones (6 million) perceive colour.
+Humans see colour using cones in the retina of their eyes. Wavelengths of light hit surfaces around us, which pass into the eye through the pupil. From here the light passes to the back of our eye, where the retina is found. The retina contains a round-about total of 126 million light receptors, called rods and cones. Rods (120 million) perceive values of light and dark, and cones (6 million) perceive colour.
 
 <p align="center">
   <img src="../../../../../../../assets/rods_and_cones.jpg">
 </p>
 
-Each cone is one of three types: a red receptor, a green receptor or a blue receptor. A combination of how much these red, green or blue receptors are stimulated is responsible for the colour that your brain perceives. The way that our eyes understand colour is mirrored in our understanding of colour on a computer, where we often use ratios of RGB.
+Each cone is one of three types: a red receptor, a green receptor or a blue receptor. A combination of how much these red, green or blue receptors are stimulated is responsible for the colour that your brain perceives. The way that our eyes understand colour using red, blue and green receptors is mirrored in our understanding of colour on a computer, where we often use ratios of RGB.
 
 <head>
 <style>
@@ -140,7 +140,7 @@ b.addEventListener('input', function() {
 
 <p style="color: #424242; font-size: 14px;">Above: use the sliders to generate colour using different ratios of red, green and blue. Credit: <a href="https://codepen.io/leemark/pen/lpEHr">Mark Lee</a></p>
 
-The colour spectrum that humans see is called "visible light". It is a comparatively small section of all known wavelengths of light, that contains our "rainbow" of colour. On one end sits ultraviolet light, which some insects are shifted towards, and on the other is infrared light, which can be seen by some snakes.
+The colour spectrum that humans see is called "visible light". It is a comparatively small section of all known wavelengths of light, that contains our "rainbow" of colour. On one end sits ultraviolet light, which some insects are geared towards, and on the other is infrared light, which can be seen by some snakes.
 <p align="center">
   <img src="../../../../../../../assets/electromagnetic_spectrum.jpeg">
 </p>
@@ -207,7 +207,7 @@ Twitter uses monochromatic blues primarily, as part of a strong brand identity. 
 <br>
 **Choosing Colours for a Delightful User Experience**
 
-When choosing a colour palate for user experience a good rule to follow is using split harmonious or split complementary relationships. Choose your main colour, then select colours either side of its complentary opposite, but not quite its triads. Here is an example:
+When choosing a colour palate for user experience a good rule to follow is using split harmonious or split complementary relationships. Choose a colour, then select colours either side of its complentary opposite, but not quite its triads. Here is an example:
 
 <p align="center">
   <img src="../../../../../../../assets/split_complementary_scheme.jpg">
@@ -226,14 +226,14 @@ Phewf!
 <br>
 **What culture do our users share?**
 
-Another important consideration is user culture. For each culture different colours are used to represent certain ideas and symbols. A common example of this in Eurocentric culture is the use of green to convey success, going forward, passing, and red to convey an error, stopping, stalling or going back. Consider Twitter's branding colours again. The light blue that they use invokes a sense of freedom, the blue sky, endless possibilities. If we were to read into it we could even say that the freedom associated with the blue also creates the perception of free speech. This may seem ridiculous, but these kinds of ideas are strongly regarded branding and marketing departments.
+Another important consideration is user culture. For each culture different colours are used to represent certain ideas and symbols. A common example of this in Eurocentric culture is the use of green to convey success, going forward, passing, and red to convey an error, stopping, stalling or going back. Consider Twitter's branding colours again. The light blue that they use invokes a sense of freedom, the blue sky, endless possibilities. If we were to read into it we could even say that the freedom associated with the blue also creates the perception of free speech. This may seem ridiculous, but these kinds of ideas are strongly regarded by branding and marketing departments.
 
 So because of this, employ care and empathy when choosing colour for your product. Some common patterns in colour symbolism in England might not be the same in Indonesia. Colour conveys emotion, and the aim is to trigger a positive emotional reponse to your design rather than a negative one.
 
 <br>
 **Accessibility - What Limitations Do Our Users Have?**
 
-So far we have talked about colour from the point of view of the writer, which is the way that most of the population sees colour, but what about those who see colour differently? 8% of men and 1% of women globally are affected by some form of colour blindness. There are many different types of colour blindness, but a common experience is a difficulty in differentiating between certain hues.
+So far we have talked about colour from the point of view of the writer, who perceives colour in the way that is typical of most of the world population, but what about those who see colour differently? 8% of men and 1% of women globally are affected by some form of colour blindness. There are many different types of colour blindness, but a common experience is a difficulty in differentiating between certain hues.
 
 <p align="center">
   <img style="width:49%;" src="../../../../../../../assets/normal_colour_perception.png">
@@ -247,10 +247,10 @@ So far we have talked about colour from the point of view of the writer, which i
 </p>
 <p style="color: #424242; font-size: 14px;">Above, left: green blindness. Above, right: blue blindness.</p>
 
-Colour blindness is caused by deficiencies in the retinal cones that perceive colour. For instance, if someone has deficiencies in their red cones they can be described as having red-weak or red-blind sight. This will cause a difficulty in differentiating between red and green shades. Think back to the example of using a green button to symbolise going forward and submitting a form, and a red button to symbolise going back or cancelling an action. To someone who is red-weak or red-blind, these buttons will look very similar, if not the same. In this case using something as well as colour to convey meaning, such as marking buttons with stand out text like "Submit" or "Cancel" is imperative. Even in people whose sight is considered normal, there are differences between them in how they differentiate between colours. An interesting measuring stick is this [Munsell hue test][munsell_hue_test], which determines how good minute colour difference perception is and which colour wavelengths might be more difficult for your retinal cones to process.
+Colour blindness is caused by deficiencies in the retinal cones that perceive colour. For instance, if someone has deficiencies in their red cones they can be described as having red-weak or red-blind sight. This will cause a difficulty in differentiating between red and green shades. Think back to the example of using a green button to symbolise going forward and submitting a form, and a red button to symbolise going back or cancelling an action. To someone who is red-weak or red-blind, these buttons will look very similar, if not the same. In this case using something alongside colour to convey meaning, such as marking buttons with stand out text like "Submit" or "Cancel" is imperative. Even in people whose sight is considered normal, there are differences between them in how they differentiate between colours. An interesting measuring stick is this [Munsell hue test][munsell_hue_test], which determines one's level of determining minute differences in hue, and which colour wavelengths might be more difficult for your retinal cones to process.
 
 
-Some people with colour blindness live with Monochromacy, which is vision with a complete lack of colour. People with Monochromatic vision see in values only, so for these users it is important to define relationships and difference using contrasting value. For instance, to someone with normal colour perception two colours of contrasting hue but the same value will be distiguishable. However to someone with Monochromacy they will not. A useful tool to check contrast for colour value with accessibility considered is this [contrast checker][contrast_checker_site].
+Some people with colour blindness live with Monochromacy, which is vision with a complete lack of colour. People with Monochromatic vision see in value only, so for these users it is important to define relationships and difference using contrasting value. For instance, to someone with normal colour perception two colours of contrasting hue but the same value will be distiguishable. However to someone with Monochromacy they will not. A useful tool to check contrast for colour value with accessibility considered is this [contrast checker][contrast_checker_site].
 
 <br>
 Colour and value are indispensible in UX design. Colour can be used with purpose to determine how your user will interact with your product. Overall it is important to consider the user's relationship with colour in order to design effectively. A sound knowledge of colour theory and well as the science behind how we perceive colour should guide the designer's hand to create products that can be useful and enjoyable to people from a multitude of cultures and a range of abilities. Ultimately however, empathy with their end user is the designer's most important tool.
