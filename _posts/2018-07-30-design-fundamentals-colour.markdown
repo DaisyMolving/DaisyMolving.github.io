@@ -150,8 +150,7 @@ The colour spectrum that humans see is called "visible light". It is a comparati
 Our visible spectrum of colour is often represented as a colour wheel in a triadic segmentation. The three primary colours (red, blue, yellow) are shown with the range of colour in between them. However, this colour wheel does not truly show how we see colours in the world around us. To better explain this we could use the Munsell colour wheel.
 
 <p align="center">
-  <img style="width:44%;" src="../../../../../../../assets/2d_colour_wheel.jpg">
-  <img style="width:55%;" src="../../../../../../../assets/3d_munsell_colour_wheel.jpg">
+  <img src="../../../../../../../assets/colour_wheels_2d_and_munsell.jpg">
 </p>
 <p style="color: #424242; font-size: 14px;">Above, left: The 2D colour wheel. Above, right: The 3D Munsell colour wheel.</p>
 
@@ -159,7 +158,7 @@ The Munsell Colour wheel is three dimensional and depicts hue, value and chroma 
 
 
 <p align="center">
-  <img src="../../../../../../../assets/hue_saturation_value.png">
+  <img src="../../../../../../../assets/hue_saturation_value.jpg">
 </p>
 
 Beware of the difference between saturation and chroma! We can think of saturation as colour on a computer and chroma as the pigment colour in ink. On a computer, colour is presented on a screen that is made up of light, therefore there is high saturation through all values. However, when colour is printed on paper sometimes the same colour cannot be achieved with chroma in the ink. This is because, although white, printer paper is not made from bright light. When black is printed on that same printer paper, it is not as dark as on a computer because the paper is a surface that reflects light. On a computer, darkness is the complete absence of screen light. In this way we can see how the value range is severely diminished for printing versus what we can perceive on the screen.
@@ -171,29 +170,14 @@ When designing for web and software products, the colour on the screen is what w
 
 It is important to understand colour relationships in order to create a product that is visually pleasing and directs the user in a non-confusing manner. Some examples of colour relationships are:
 
-* Triadic
-  <p align="center">
-    <img style="width:44%;" src="../../../../../../../assets/triadic_scheme.png">
-  </p>
-* Monochromatic
-  <p align="center">
-   <img style="width:44%;" src="../../../../../../../assets/monochromatic_scheme.png">
-  </p>
-* Complementary
-  <p align="center">
-   <img style="width:44%;" src="../../../../../../../assets/complementary_scheme.png">
-  </p>
-
-A helpful resource to demonstrate these different colour relationships is the [Adobe Colour Wheel][adobe_colour_wheel]. Here you can select various relationships in the dropdown, and drag to create different variations. As you will see, triadic splits itself at points equal thirds of the wheel. An example of a triadic relationship would be the three primary colours of red, yellow and blue. A monochromatic relationship refers to different values of the same colour. Think of the Munsell colour wheel here, where the wheel does not spin but the value rod moves up and down. A complementary colour relationship refers to colours that are directly opposite one another on the colour wheel. For instance, red and green, or gold and blue. "Complementary" seems like a misnomer, as these colours are difficult for our eyes to see together. They can be thought of as contrasting colours. The reason that our eye has a hard time viewing complementary colours directly next to each other is due to the way that our retinal cones process colour. Our red cones and green cones cannot process receiving red and green light wavelengths at the same time, and so they take turns in a way that makes complementary colours appear to vibrate. This is why this is not only difficult to read, but also likely to give you a headache:
-
 <p align="center">
-  <img style="width:44%;" src="../../../../../../../assets/complementary_colours_text.png">
+  <img src="../../../../../../../assets/triadic_monochromatic_complementary_colour_wheels.jpg">
 </p>
 
-Whereas this has oceans more chill:
+A helpful resource to demonstrate these different colour relationships is the [Adobe Colour Wheel][adobe_colour_wheel]. Here you can select various relationships in the dropdown, and drag to create different variations. As you will see, triadic splits itself at points equal thirds of the wheel. An example of a triadic relationship would be the three primary colours of red, yellow and blue. A monochromatic relationship refers to different values of the same colour. Think of the Munsell colour wheel here, where the wheel does not spin but the value rod moves up and down. A complementary colour relationship refers to colours that are directly opposite one another on the colour wheel. For instance, red and green, or gold and blue. "Complementary" seems like a misnomer, as these colours are difficult for our eyes to see together. They can be thought of as contrasting colours. The reason that our eye has a hard time viewing complementary colours directly next to each other is due to the way that our retinal cones process colour. Our red cones and green cones cannot process receiving red and green light wavelengths at the same time, and so they take turns in a way that makes complementary colours appear to vibrate. This is why the following complementary example is not only difficult to read, but also likely to give you a headache. However the analagous colours example has oceans more chill.
 
 <p align="center">
-  <img style="width:44%;" src="../../../../../../../assets/analogous_colours_text.png">
+  <img src="../../../../../../../assets/complementary_vs_analagous_colours.jpg">
 </p>
 
 This may lead one to think that using complementary colours is a bad idea when creating user-friendly websites, but it can be used in such a way to highlight and draw attention. Take the Twitter sign-in page below as an example:
@@ -210,7 +194,7 @@ Twitter uses monochromatic blues primarily, as part of a strong brand identity. 
 When choosing a colour palate for user experience a good rule to follow is using split harmonious or split complementary relationships. Choose a colour, then select colours either side of its complentary opposite, but not quite its triads. Here is an example:
 
 <p align="center">
-  <img src="../../../../../../../assets/split_complementary_scheme.jpg">
+  <img src="../../../../../../../assets/split_harmonious_colour_wheel.jpg">
 </p>
 
 This palate is great for creating visual interest and leading the eye to parts of the website that you want the user to notice or spend time, without being too visually harsh. The idea is to use the analogous, near colours the most (these are the harmonious colours) and use the contrasting third colour to highlight and accent. Remember also to use near white or near black, and greys. Creating an absence of colour allows your colours to be more powerful rather than overloaded and intense. Overall, it's cool to use colour for accenting, drawing attention, manulating the user and making this **pop**, but at the same time it is important to maintain some chill.
@@ -236,14 +220,14 @@ So because of this, employ care and empathy when choosing colour for your produc
 So far we have talked about colour from the point of view of the writer, who perceives colour in the way that is typical of most of the world population, but what about those who see colour differently? 8% of men and 1% of women globally are affected by some form of colour blindness. There are many different types of colour blindness, but a common experience is a difficulty in differentiating between certain hues.
 
 <p align="center">
-  <img style="width:49%;" src="../../../../../../../assets/normal_colour_perception.png">
-  <img style="width:49%;" src="../../../../../../../assets/red_blind_example.png">
+  <img style="width:49%;" src="../../../../../../../assets/power_rangers_normal_colour_perception.jpg">
+  <img style="width:49%;" src="../../../../../../../assets/power_rangers_red_blind_example.jpg">
 </p>
 <p style="color: #424242; font-size: 14px;">Above, left: normal colour perception. Above, right: red blindness.</p>
 
 <p align="center">
-  <img style="width:49%;" src="../../../../../../../assets/green_blind_example.png">
-  <img style="width:49%;" src="../../../../../../../assets/blue_blind_example.png">
+  <img style="width:49%;" src="../../../../../../../assets/power_rangers_green_blind_example.jpg">
+  <img style="width:49%;" src="../../../../../../../assets/power_rangers_blue_blind_example.jpg">
 </p>
 <p style="color: #424242; font-size: 14px;">Above, left: green blindness. Above, right: blue blindness.</p>
 
